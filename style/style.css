@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
@@ -19,6 +19,13 @@
     font-style: normal;
 }
 
+.raleway-font {
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 body {
     max-width: 1440px;
@@ -26,7 +33,9 @@ body {
     /* text-align: center; */
 }
 
-header {
+header,
+main,
+footer {
     max-width: 1160px;
     margin: 0 auto;
 }
@@ -36,12 +45,24 @@ header {
     display: flex;
 }
 
-.flex-1{
+.flex-1 {
     flex: 1;
 }
 
-.black-1{
+.black-1 {
     color: #111111;
+}
+.grey-1 {
+    color: #808080
+}
+
+.text-center {
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.875rem;
+    font-weight: 700;
 }
 
 .btn-primary {
@@ -120,31 +141,118 @@ header {
     color: #5D58EF;
 }
 
-.banner{
+.banner {
     display: flex;
     align-items: center;
     gap: 50px;
-    padding: 20px 0;
 }
 
-.banner-title{
+.banner-title {
     font-size: 3.5rem;
     font-weight: 700;
 }
-#empowering{
+
+#empowering {
     color: #FEA301;
 }
-#vision{
+
+#vision {
     color: #01ACFD;
 }
 
-.banner-description{
+.banner-description {
     font-size: 1.25rem;
     margin: 24px 0;
 }
 
+#curriculum{
+    background-image: url('../assets/bg.png');
+    background-repeat: no-repeat;
+    background-position: -170px 5px;
+    /* background-size: 100% auto; */
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin-bottom: 80px;
+}
+
+.card {
+    border: 0.94px solid rgb(222, 245, 255);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(222, 245, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+    padding: 60px 40px ;
+    text-align: center;
+}
+
+.card-2{
+    background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+
+.card-title{
+    margin: 33px 0;
+    font-size: 1.5rem;
+}
+
+.card-img{
+    max-width: 140px;
+    margin: 0 auto;
+    aspect-ratio: 1/1;
+}
+.card-img img{
+    width: 100%;
+}   
 
 
+.card-description{
+    margin-bottom: 38px;
+    font-size: .9rem;
+    line-height: 28px;
+}
+
+section {
+    padding: 60px 0;
+}
+
+.curriculum-title {
+    margin-bottom: 80px;
+}
+
+.read-more{
+    font-weight: 700;
+}
+
+.read-more-1{
+    color: #64C8FF;
+}
+
+.read-more-2{
+    color: #F0AA00;
+}
+
+.read-more-3{
+    color: #8700FF;
+}
+
+.read-more a{
+    text-decoration: none;
+}
+
+.slid-btn{
+    text-align: center;
+}
+.btn-left, .btn-right{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #FEA301;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
 
 @media screen and (max-width: 576px) {
     .navbar {
@@ -152,11 +260,10 @@ header {
         border-bottom: 0.5px solid #FEA301;
     }
 
-    
-
     .school-name,
     .nav-items-container,
-    .contact-btn {
+    .contact-btn,
+    .slid-btn {
         display: none;
     }
 
@@ -165,21 +272,22 @@ header {
         font-size: 1.5rem;
     }
 
-    .banner{
+    .banner {
         flex-direction: column-reverse;
         text-align: center;
         padding: 20px 26px;
         gap: 20px;
     }
 
-    .banner-title{
+    .banner-title {
         font-size: 2rem;
     }
-    .banner-img img{
+
+    .banner-img img {
         width: 100%;
     }
 
-    .banner-description{
+    .banner-description {
         font-size: 14px;
         font-weight: 500;
         margin: 18px 0;
@@ -189,6 +297,64 @@ header {
         padding: 15px 24px;
         border-radius: 8px;
         font-size: 1rem;
+
+    }
+
+    #curriculum{
+        padding: 16px 20px;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 12px;
+        margin-bottom: 0;
+    }
+
+    .card {
+        padding: 36px 28px ;
         
     }
+
+    .card-content{
+        max-width: 190px;
+        margin: 0 auto;
+    }
+    
+    
+    .card-title{
+        margin: 22px 0;
+        font-size: 1rem;
+    }
+    
+    .card-img{
+        max-width: 90px;
+        margin: 0 auto;
+        aspect-ratio: 1/1;
+    }
+    .card-img img{
+        width: 100%;
+    }   
+    
+    
+    .card-description{
+        margin-bottom: 25px;
+        font-size: 0.625rem;
+        line-height: 19px;
+    }
+    
+    section {
+        padding: 40px 0;
+    }
+    
+    .curriculum-title {
+        margin-bottom: 20px;
+    }
+
+    .section-title {
+        font-size: 1.625rem;
+    }
+    .read-more{
+        font-size: 0.625rem;
+    }
+    
 }
