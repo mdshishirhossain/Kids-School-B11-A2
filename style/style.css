@@ -70,9 +70,17 @@ footer {
     color: #ffffff;
     padding: 15px 60px;
     border-radius: 12px;
-    border: none;
+    border: 1px solid #FEA301;
     font-size: 1.25rem;
     font-weight: 700;
+    cursor: pointer;
+}
+
+.btn-primary:hover{
+    background-color: transparent;
+    border: 1px solid #FEA301;
+    color: #FEA301;
+    transition: all 0.2s ease-in-out;
 }
 
 .btn-secondary {
@@ -80,9 +88,17 @@ footer {
     color: #ffffff;
     padding: 15px 45px;
     border-radius: 12px;
-    border: none;
+    border: 1px solid #111111;;
     font-size: 1.25rem;
     font-weight: 700;
+    cursor: pointer;
+}
+
+.btn-secondary:hover{
+    background-color: transparent;
+    border: 1px solid #111111;;
+    color: #111111;;
+    transition: all 0.2s ease-in-out;
 }
 
 /* header styles */
@@ -168,8 +184,8 @@ footer {
 #curriculum{
     background-image: url('../assets/bg.png');
     background-repeat: no-repeat;
-    background-position: -170px 5px;
-    /* background-size: 100% auto; */
+    background-position: -260px 0px;
+    background-size: cover;
 }
 
 .card-container {
@@ -248,10 +264,18 @@ section {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    border: none;
+    border: 1px solid #FEA301;
     background-color: #FEA301;
     color: #ffffff;
     font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.btn-left:hover, .btn-right:hover{
+    background-color: transparent;
+    border: 1px solid #FEA301;
+    color: #FEA301;
+    transition: all 0.2s ease-in-out;
 }
 
 @media screen and (max-width: 576px) {
