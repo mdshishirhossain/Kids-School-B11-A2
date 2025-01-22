@@ -497,6 +497,13 @@ footer{
     }
 
     #curriculum{
+        background-image: url('../assets/bg.png');
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-size: auto auto;
+    }
+
+    #curriculum{
         padding: 40px 20px 20px;
     }
 
@@ -629,7 +636,11 @@ footer{
     .footer-about-title, .footer-contact-title{
         font-size: 1.25rem;
         font-weight: 600;
-        margin-bottom: 32px;
+        margin-bottom: 27px;
+    }
+
+    .footer-contact-title{
+        margin-bottom: 36px;
     }
     .footer-about-items, .footer-contact-items{
         list-style: none;
