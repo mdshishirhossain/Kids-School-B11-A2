@@ -28,16 +28,24 @@
 
 
 body {
-    max-width: 1440px;
-    margin: 0 auto;
-    /* text-align: center; */
+   
+    
 }
 
 header,
-main,
+main, section,
 footer {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container{
     max-width: 1160px;
     margin: 0 auto;
+}
+
+section {
+    padding: 60px 0;
 }
 
 /* shared style */
@@ -63,12 +71,13 @@ footer {
 .section-title {
     font-size: 2.875rem;
     font-weight: 700;
+    margin-bottom: 80px;
 }
 
 .btn-primary {
     background-color: #FEA301;
     color: #ffffff;
-    padding: 15px 60px;
+    padding: 10px 60px;
     border-radius: 12px;
     border: 1px solid #FEA301;
     font-size: 1.25rem;
@@ -86,7 +95,7 @@ footer {
 .btn-secondary {
     background-color: #111111;
     color: #ffffff;
-    padding: 15px 45px;
+    padding: 10px 45px;
     border-radius: 12px;
     border: 1px solid #111111;;
     font-size: 1.25rem;
@@ -184,9 +193,11 @@ footer {
 #curriculum{
     background-image: url('../assets/bg.png');
     background-repeat: no-repeat;
-    background-position: -260px 0px;
+    background-position: center;
     background-size: cover;
 }
+
+
 
 .card-container {
     display: grid;
@@ -227,14 +238,6 @@ footer {
     margin-bottom: 38px;
     font-size: .9rem;
     line-height: 28px;
-}
-
-section {
-    padding: 60px 0;
-}
-
-.curriculum-title {
-    margin-bottom: 80px;
 }
 
 .read-more{
@@ -278,7 +281,101 @@ section {
     transition: all 0.2s ease-in-out;
 }
 
+#our-stories{
+    background-image: linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%), url('../assets/bg.png'), url('../assets/bg.png');
+}
+
+.stories-card-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin-bottom: 80px;
+}
+
+.stories-card-container img{
+    border-radius: 16px 16px 0px 0px;
+    width: 100%;
+}
+
+.big-card{
+    background-color: #FFFFFF;
+    border-radius: 16px;
+}
+.big-card-title{
+    font-size: 1.5rem;
+}
+.big-card-info{
+    position: relative;
+    padding: 36px;
+}
+
+.small-card-info{
+    position: relative;
+    padding: 36px;
+}
+
+.big-card-description{
+    margin-top: 50px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.big-card img{
+    width: 100%;
+}
+
+
+
+.card-date{
+    background-color: #3CD8E8;
+    color: #ffffff;
+    border-radius: 48px;
+    padding: 14px 18px;
+    font-size: 0.9rem;
+    position: absolute;
+    top: -28px;
+}
+
+.date-1{
+    background-color: #3CD8E8;
+}
+.date-2{
+    background-color: #95B226;
+}
+.date-3{
+    background-color: #5D58F0;
+}
+.date-4{
+    background-color: #95B226;
+}
+.date-5{
+    background-color: #95B226;
+}
+
+.small-card-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.small-card{
+    background-color: #FFFFFF;
+    border-radius: 16px;
+}
+
+.small-card-title{
+    font-size: 0.9rem;
+    line-height: 28px;
+}
+
+.hide{
+    display: none;
+}
+
 @media screen and (max-width: 576px) {
+
+ 
     .navbar {
         padding: 16px 20px;
         border-bottom: 0.5px solid #FEA301;
@@ -287,8 +384,13 @@ section {
     .school-name,
     .nav-items-container,
     .contact-btn,
-    .slid-btn {
+    .slid-btn,
+    .big-card-container {
         display: none;
+    }
+
+    .hide{
+        display: block;
     }
 
     .hamburger-icon {
@@ -318,14 +420,14 @@ section {
     }
 
     .btn-secondary {
-        padding: 15px 24px;
+        padding: 10px 24px;
         border-radius: 8px;
         font-size: 1rem;
 
     }
 
     #curriculum{
-        padding: 16px 20px;
+        padding: 40px 20px 20px;
     }
 
     .card-container {
@@ -366,11 +468,11 @@ section {
         line-height: 19px;
     }
     
-    section {
-        padding: 40px 0;
+    #our-stories {
+        padding: 60px 20px 40px;
     }
     
-    .curriculum-title {
+    .section-title {
         margin-bottom: 20px;
     }
 
@@ -379,6 +481,50 @@ section {
     }
     .read-more{
         font-size: 0.625rem;
+    }
+
+    
+    #our-stories{
+        background-size: 180% auto;
+        
+        
+    }
+
+    .stories-card-container img{
+        border-radius: 10px 10px 0px 0px;
+        width: 100%;
+    }
+
+
+
+    .stories-card-container{
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 20px;
+    }
+
+    .small-card-container{
+        gap: 10px;
+    }
+    
+    .small-card{
+        background-color: #FFFFFF;
+        border-radius: 10px;
+    }
+
+    .small-card-info{
+        padding: 20px;
+    }
+    
+    .small-card-title{
+        font-size: 0.5rem;
+        line-height: 17px;
+    }
+
+    .card-date{
+        border-radius: 28px;
+        padding: 6px 10px;
+        font-size: 0.5rem;
+        top: -14px;
     }
     
 }
