@@ -5,13 +5,6 @@
     padding: 0;
 }
 
-:root {
-    --primary-color: #FEA301;
-    --secondary-color: #01ACFD;
-    --light-blue: #05D4DF;
-    --blue: #5D58EF
-}
-
 .quicksand-font {
     font-family: "Quicksand", serif;
     font-optical-sizing: auto;
@@ -108,6 +101,13 @@ section {
     border: 1px solid #111111;;
     color: #111111;;
     transition: all 0.2s ease-in-out;
+}
+
+.marquee-text{
+    position: absolute;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #5D58EF;
 }
 
 /* header styles */
@@ -217,6 +217,10 @@ section {
 
 .card-2{
     background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+
+.card-3{
+    background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
 }
 
 .card-title{
@@ -422,6 +426,7 @@ footer{
 
 .footer-about-item{
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .footer-contact-items{
