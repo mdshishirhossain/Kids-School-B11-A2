@@ -369,6 +369,71 @@ section {
     line-height: 28px;
 }
 
+footer{
+    background-color: #01ACFD;
+    color: #ffffff;
+    padding: 120px 0;
+}
+
+.footer-content{
+    display: grid;
+    grid-template-columns: 400px 1fr 1fr;
+    gap: 140px;
+    justify-content: space-between;
+}
+
+.footer-logo{
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 35px;
+   
+}
+
+.footer-img{
+    max-width: 70px;
+}
+
+.logo-name{
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 39px;
+    color: #FFFFFF;
+}
+
+.footer-description{
+    font-size: 1.25rem;
+}
+
+.footer-about-title, .footer-contact-title{
+    font-size: 1.5rem;
+    margin-bottom: 32px;
+    font-weight: 700;
+}
+.footer-about-items, .footer-contact-items{
+    list-style: none;
+}
+.footer-about-link{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    font-weight: 500;
+    
+}
+
+.footer-about-item{
+    margin-bottom: 20px;
+}
+
+.footer-contact-items{
+    display: flex;
+    gap: 10px;
+}
+
+.footer-contact-item:hover{
+    transform: scale(1.3);
+    transition: all 0.3s ease-in-out;
+}
+
 .hide{
     display: none;
 }
@@ -378,7 +443,7 @@ section {
  
     .navbar {
         padding: 16px 20px;
-        border-bottom: 0.5px solid #FEA301;
+        border: 0.5px solid #FEA301;
     }
 
     .school-name,
@@ -525,6 +590,60 @@ section {
         padding: 6px 10px;
         font-size: 0.5rem;
         top: -14px;
+    }
+    footer{
+        padding: 40px 20px;
+    }
+
+    .footer-content{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    
+    .footer-logo{
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 35px;
+       
+    }
+    
+    .footer-img{
+        max-width: 60px;
+    }
+    
+    .logo-name{
+        font-size: 2.1rem;
+        line-height: 33px;
+    }
+    
+    .footer-description{
+        font-size: 1rem;
+    }
+    
+    .footer-about-title, .footer-contact-title{
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 32px;
+    }
+    .footer-about-items, .footer-contact-items{
+        list-style: none;
+    }
+    .footer-about-link{
+        text-decoration: none;
+        color: #FFFFFF;
+        font-size: 1rem;
+        font-weight: 500;
+        
+    }
+    
+    .footer-about-item{
+        margin-bottom: 17px;
+    }
+    
+    .footer-contact-items{
+        display: flex;
+        gap: 8px;
     }
     
 }
